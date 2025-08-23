@@ -1,0 +1,1 @@
+symbol,stock_price,strike,expiry,premium,premium_pct,annualized_yield_pct,breakeven,breakeven_pct_below,risk_adjusted_yield,fundamental_score,sma50,ma20,ma200,be_at_or_below_sma50,monthly_yield_pct,dist52w_pct,pullback_pct,trend_note,hi52,hi20,composite_score
