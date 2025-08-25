@@ -1,4 +1,5 @@
 symbol,stock_price,strike,expiry,premium,premium_pct,annualized_yield_pct,iv_est,description,open_interest,volume,rel_spread
+FCX,43.69,45.0,2026-02-20,3.92,8.98,18.3,36.1,FCX20Feb26C45.00,0,0,0.038
 FCX,43.69,45.0,2026-01-16,3.38,7.72,19.5,35.38,FCX16Jan26C45.00,0,45,0.044
 FCX,43.69,45.0,2025-12-19,2.99,6.84,21.5,35.64,FCX19Dec25C45.00,0,135,0.04
 FCX,43.69,45.0,2025-11-21,2.51,5.76,23.8,35.53,FCX21Nov25C45.00,0,294,0.012
