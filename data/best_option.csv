@@ -1,1 +1,5 @@
 symbol,stock_price,strike,expiry,premium,premium_pct,annualized_yield_pct,iv_est,description,open_interest,volume,rel_spread,sma50,ma20,ma200,be_at_or_below_sma50,dist52w_pct,pullback_pct,trend_note,hi52,hi20
+CNQ.TO,43.16,45.0,2026-02-20,2.5,5.79,12.0,26.68,CNQ20Feb26C45.00.MX,0,0,0.162,43.0496,42.2525,,no,-10.3448,-2.1759,neutral,48.14,44.12
+ABX.TO,36.45,38.0,2025-10-17,1.85,5.08,37.0,46.1,ABX17Oct25C38.00.MX,0,0,0.162,30.5716,33.5629,,no,-1.5929,-1.5929,neutral,37.04,37.04
+AP.UN.TO,18.55,20.0,2025-12-19,0.93,4.99,16.1,35.64,AP19Dec25C20.00.MX,0,0,0.162,17.6514,18.0216,,no,-0.2152,-0.2152,neutral,18.59,18.59
+BEP.UN.TO,35.02,40.0,2025-12-19,1.16,3.3,10.6,35.9,BEP19Dec25C40.00.MX,0,0,0.162,35.532,34.9972,,yes,-8.3006,-8.3006,neutral,38.19,38.19
