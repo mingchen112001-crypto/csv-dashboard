@@ -1,2 +1,3 @@
 symbol,stock_price,strike,expiry,premium,premium_pct,annualized_yield_pct,breakeven,breakeven_pct_below,risk_adjusted_yield,fundamental_score,sma50,ma20,ma200,be_at_or_below_sma50,monthly_yield_pct,dist52w_pct,pullback_pct,trend_note,hi52,hi20,composite_score,open_interest,volume,rel_spread
-WDO.TO,18.21,9.0,2025-09-19,0.06,0.72,12.5,8.94,50.91,36.63,70,17.67,17.27,15.91,True,1.03,10.03,1.35,Uptrend,20.24,18.46,1.0103,0,0,0.162
+WDO.TO,18.2,9.5,2025-09-19,0.08,0.88,15.2,9.42,48.24,42.27,70,17.67,17.27,15.91,True,1.25,10.08,1.41,Uptrend,20.24,18.46,0.9841,0,0,0.162
+WDO.TO,18.2,9.0,2025-09-19,0.06,0.72,12.5,8.94,50.88,36.61,70,17.67,17.27,15.91,True,1.03,10.08,1.41,Uptrend,20.24,18.46,0.9699,0,0,0.162
