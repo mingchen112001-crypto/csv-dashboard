@@ -1,1 +1,2 @@
 symbol,stock_price,strike,expiry,premium,premium_pct,annualized_yield_pct,iv_est,description,open_interest,volume,rel_spread,sma50,ma20,ma200,be_at_or_below_sma50,dist52w_pct,pullback_pct,trend_note,hi52,hi20
+ABX.TO,36.63,39.0,2025-11-21,1.67,4.55,20.7,37.66,ABX21Nov25C39.00.MX,0,0,0.162,30.867,34.0814,,no,-1.1069,-1.1069,neutral,37.04,37.04
