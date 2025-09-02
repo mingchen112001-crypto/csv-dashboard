@@ -1,1 +1,2 @@
 symbol,stock_price,strike,expiry,premium,premium_pct,annualized_yield_pct,breakeven,breakeven_pct_below,risk_adjusted_yield,fundamental_score,sma50,ma20,ma200,be_at_or_below_sma50,monthly_yield_pct,dist52w_pct,pullback_pct,trend_note,hi52,hi20,composite_score,open_interest,volume,rel_spread,nearest_support,support_distance_pct,support_distance_pct_signed,support_relation,be_near_support,support_tf_used
+ABX.TO,36.63,35.5,2025-09-05,0.12,0.34,41.2,35.38,3.41,1.16,70,30.87,33.71,26.81,False,3.39,1.19,1.19,Uptrend,37.07,37.07,0.94,0,0,0.162,,,,,no,
