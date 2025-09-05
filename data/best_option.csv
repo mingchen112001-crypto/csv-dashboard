@@ -1,6 +1,8 @@
 symbol,stock_price,strike,expiry,premium,premium_pct,annualized_yield_pct,iv_est,description,open_interest,volume,rel_spread,sma50,ma20,ma200,trend_note,hi52,hi20,model_price_histiv,model_iv_pct,edge_live_minus_model,edge_pct,ivcomp_filter,ivcomp_percentile,ivcomp_window
 WDO.TO,19.58,20.0,2026-02-20,1.65,8.43,18.3,33.19,WDO20Feb26C20.00.MX,0,0,0.182,17.674,17.989,,neutral,20.09,19.58,,,,,downtrend,0.25,21
+FCX,46.5,48.0,2026-02-20,3.9,8.39,18.2,34.73,FCX20Feb26C48.00,0,110,0.026,43.6062,43.9171,,neutral,47.21,46.34,,,,,downtrend,0.25,21
 ABX.TO,39.37,41.0,2026-02-20,2.6,6.62,14.3,29.55,ABX20Feb26C41.00.MX,0,25,0.05,31.6,35.373,,neutral,39.37,39.37,,,,,downtrend,0.25,21
+ARE,84.04,87.5,2026-01-16,5.0,5.95,16.3,30.72,ARE16Jan26C87.50,0,4,0.16,77.9964,80.0461,,neutral,110.23,84.7,,,,,downtrend,0.25,21
 CNQ.TO,42.06,43.0,2026-02-20,1.86,4.42,9.6,18.53,CNQ20Feb26C43.00.MX,0,0,0.086,42.8018,42.6689,,neutral,48.14,44.11,,,,,downtrend,0.25,21
 BEP.UN.TO,34.42,36.0,2026-02-20,1.43,4.14,8.9,20.98,BEP20Feb26C36.00.MX,0,0,0.175,35.5098,34.8082,,neutral,38.19,35.67,,,,,downtrend,0.25,21
 AP.UN.TO,19.38,20.0,2026-02-20,0.55,2.84,6.1,14.11,AP20Feb26C20.00.MX,0,8,0.364,17.8726,18.3742,,neutral,19.38,19.38,,,,,downtrend,0.25,21
