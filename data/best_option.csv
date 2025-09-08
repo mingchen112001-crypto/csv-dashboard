@@ -1,9 +1,6 @@
-symbol,stock_price,strike,expiry,premium,premium_pct,annualized_yield_pct,iv_est,description,open_interest,volume,rel_spread,sma50,ma20,ma200,be_at_or_below_sma50,trend_note,hi52,hi20,live_atm_iv_pct,hist_iv_p25_pct,hist_iv_p50_pct,hist_iv_p75_pct,live_iv_percentile,hist_iv_n
-WDO.TO,19.58,20.0,2026-02-20,1.65,8.43,18.3,33.93,WDO20Feb26C20.00.MX,0,0,0.182,17.674,17.989,,no,neutral,20.09,19.58,,,,,,
-FCX,46.25,48.0,2026-02-20,3.9,8.43,18.3,36.44,FCX20Feb26C48.00,0,110,0.026,43.6062,43.9171,,no,neutral,47.21,46.34,,,,,,
-ABX.TO,39.37,41.0,2026-02-20,2.6,6.62,14.3,30.24,ABX20Feb26C41.00.MX,0,25,0.05,31.6,35.373,,no,neutral,39.37,39.37,,,,,,
-ARE,84.04,87.5,2026-01-16,5.0,5.95,16.3,31.33,ARE16Jan26C87.50,0,4,0.16,77.9964,80.0461,,no,neutral,106.75,84.7,,,,,,
-CNQ.TO,42.06,43.0,2026-02-20,1.86,4.42,9.6,19.27,CNQ20Feb26C43.00.MX,0,0,0.086,42.8018,42.6689,,yes,neutral,47.27,44.11,,,,,,
-BEP.UN.TO,34.42,36.0,2026-02-20,1.43,4.14,8.9,21.64,BEP20Feb26C36.00.MX,0,0,0.175,35.5098,34.8082,,yes,neutral,38.19,35.67,,,,,,
-AP.UN.TO,19.38,20.0,2026-02-20,0.55,2.84,6.1,14.79,AP20Feb26C20.00.MX,0,8,0.364,17.8726,18.3742,,no,neutral,19.38,19.38,,,,,,
-JEPQ,55.7,61.0,2025-09-19,0.69,1.25,32.4,54.74,JEPQ19Sep25C61.00,0,0,0.162,54.967,55.4512,,no,neutral,58.51,56.2,,,,,,
+symbol,stock_price,strike,expiry,premium,premium_pct,annualized_yield_pct,iv_est,description,open_interest,volume,rel_spread,sma50,ma20,ma200,be_at_or_below_sma50,dist52w_pct,pullback_pct,trend_note,hi52,hi20
+ABX.TO,39.37,42.0,2026-01-16,2.77,7.05,19.7,40.34,ABX16Jan26C42.00.MX,0,0,0.162,31.6,35.373,,no,0.0,0.0,neutral,39.37,39.37
+CNQ.TO,42.06,43.0,2025-12-19,2.54,6.05,21.6,32.82,CNQ19Dec25C43.00.MX,0,0,0.162,42.8018,42.6689,,yes,-11.0218,-4.6475,neutral,47.27,44.11
+AP.UN.TO,19.38,20.0,2025-12-19,0.93,4.77,17.0,28.63,AP19Dec25C20.00.MX,0,0,0.162,17.8726,18.3742,,no,0.0,0.0,neutral,19.38,19.38
+BEP.UN.TO,34.42,40.0,2025-12-19,1.16,3.36,12.0,40.58,BEP19Dec25C40.00.MX,0,0,0.162,35.5098,34.8082,,yes,-9.8717,-3.5043,neutral,38.19,35.67
+WDO.TO,19.58,24.0,2025-12-19,0.46,2.36,8.4,41.51,WDO19Dec25C24.00.MX,0,0,0.162,17.674,17.989,,no,-2.5386,0.0,neutral,20.09,19.58
