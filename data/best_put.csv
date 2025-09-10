@@ -1,1 +1,9 @@
 symbol,stock_price,strike,expiry,premium,premium_pct,annualized_yield_pct,breakeven,breakeven_pct_below,risk_adjusted_yield,fundamental_score,sma50,ma20,ma200,be_at_or_below_sma50,monthly_yield_pct,dist52w_pct,pullback_pct,trend_note,hi52,hi20,composite_score,open_interest,volume,rel_spread,nearest_support,support_distance_pct,support_distance_pct_signed,support_relation,be_near_support,support_tf_used
+ABX.TO,40.94,40.5,2025-10-10,1.17,2.89,35.1,39.33,3.93,11.35,70,32.32,36.38,27.33,False,2.89,0.73,0.73,Uptrend,41.24,41.24,0.94,0,0,0.12,,,,,no,
+ABX.TO,40.94,27.5,2025-09-12,0.08,0.3,55.2,27.42,33.02,10.0,70,32.32,36.38,27.33,True,4.54,0.73,0.73,Uptrend,41.24,41.24,0.8878,0,0,0.162,,,,,no,
+ABX.TO,40.94,27.0,2025-09-12,0.04,0.14,25.0,26.96,34.15,4.68,70,32.32,36.38,27.33,True,2.06,0.73,0.73,Uptrend,41.24,41.24,0.7637,0,0,0.162,,,,,no,
+ABX.TO,40.94,38.5,2025-09-12,0.46,1.2,219.2,38.04,7.08,8.51,70,32.32,36.38,27.33,False,18.02,0.73,0.73,Uptrend,41.24,41.24,0.4686,0,15,0.162,,,,,no,
+ABX.TO,40.94,40.5,2025-10-03,1.01,2.49,39.5,39.49,3.54,8.83,70,32.32,36.38,27.33,False,3.25,0.73,0.73,Uptrend,41.24,41.24,0.4252,0,15,0.139,,,,,no,
+ABX.TO,40.94,40.5,2025-09-26,0.83,2.05,46.7,39.67,3.1,6.35,70,32.32,36.38,27.33,False,3.84,0.73,0.73,Uptrend,41.24,41.24,0.3532,0,76,0.12,,,,,no,
+ABX.TO,40.94,40.0,2025-09-26,0.62,1.56,35.6,39.38,3.81,5.95,70,32.32,36.38,27.33,False,2.93,0.73,0.73,Uptrend,41.24,41.24,0.3531,0,1,0.144,,,,,no,
+ABX.TO,40.94,40.5,2025-09-19,0.59,1.47,59.5,39.91,2.52,3.7,70,32.32,36.38,27.33,False,4.9,0.73,0.73,Uptrend,41.24,41.24,0.2747,0,16,0.118,,,,,no,
