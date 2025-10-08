@@ -1,1 +1,2 @@
 symbol,stock_price,strike,expiry,premium,premium_pct,annualized_yield_pct,iv_est,description,open_interest,volume,rel_spread,sma50,ma20,ma200,be_at_or_below_sma50,dist52w_pct,pullback_pct,trend_note,hi52,hi20
+WDO.TO,23.21,24.0,2026-03-20,2.2,9.48,21.2,40.37,WDO20Mar26C24.00.MX,0,0,0.136,18.8812,21.0283,,no,0.0,0.0,neutral,23.21,23.21
