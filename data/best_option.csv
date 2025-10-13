@@ -1,2 +1,1 @@
 symbol,stock_price,strike,expiry,premium,premium_pct,annualized_yield_pct,iv_est,description,open_interest,volume,rel_spread,sma50,ma20,ma200,be_at_or_below_sma50,dist52w_pct,pullback_pct,trend_note,hi52,hi20
-WDO.TO,21.86,22.5,2025-11-21,0.95,4.35,37.7,41.13,WDO21Nov25C22.50.MX,0,0,0.211,19.0738,21.1636,,no,-5.8165,-5.8165,neutral,23.21,23.21
