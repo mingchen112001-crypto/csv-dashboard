@@ -1,4 +1,1 @@
 symbol,stock_price,strike,expiry,premium,premium_pct,annualized_yield_pct,iv_est,description,open_interest,volume,rel_spread,sma50,ma20,ma200,be_at_or_below_sma50,dist52w_pct,pullback_pct,trend_note,hi52,hi20
-FCX,42.88,44.0,2026-03-20,4.38,10.2,23.5,42.58,FCX20Mar26C44.00,0,99,0.057,42.4775,41.4854,,no,-9.1824,-5.4784,neutral,47.21,45.36
-ARE,73.57,77.5,2026-01-16,3.45,4.69,18.0,33.26,ARE16Jan26C77.50,0,1,0.319,80.626,80.1614,,yes,-28.4408,-15.8719,neutral,102.81,87.45
-JEPQ,57.28,59.0,2026-02-20,0.77,1.35,3.7,10.14,JEPQ20Feb26C59.00,0,5,0.452,56.2527,57.0565,,no,-2.0937,-0.6504,neutral,58.51,57.66
