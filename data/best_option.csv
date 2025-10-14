@@ -1,3 +1,4 @@
 symbol,stock_price,strike,expiry,premium,premium_pct,annualized_yield_pct,iv_est,description,open_interest,volume,rel_spread,sma50,ma20,ma200,be_at_or_below_sma50,dist52w_pct,pullback_pct,trend_note,hi52,hi20
-ABX.TO,46.87,48.0,2026-03-20,4.42,9.44,21.9,39.46,ABX20Mar26C48.00.MX,0,0,0.034,39.775,45.321,,no,-4.2297,-4.2297,neutral,48.94,48.94
-WDO.TO,23.17,24.0,2026-03-20,2.17,9.39,21.8,41.08,WDO20Mar26C24.00.MX,0,0,0.115,19.2074,21.3557,,no,-0.1723,-0.1723,neutral,23.21,23.21
+WDO.TO,23.25,24.0,2026-03-20,2.2,9.46,21.9,40.82,WDO20Mar26C24.00.MX,0,0,0.136,19.2088,21.3623,,no,0.0,0.0,neutral,23.25,23.25
+ABX.TO,46.78,48.0,2026-03-20,4.4,9.41,21.8,39.64,ABX20Mar26C48.00.MX,0,0,0.045,39.7732,45.3125,,no,-4.4136,-4.4136,neutral,48.94,48.94
+BEP.UN.TO,38.02,39.0,2025-11-21,0.93,2.43,23.3,27.11,BEP21Nov25C39.00.MX,0,0,0.162,35.4156,36.8502,,no,-2.4628,-2.4628,neutral,38.98,38.98
