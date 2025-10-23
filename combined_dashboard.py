@@ -19,6 +19,7 @@ SOURCES = [
     {"id": "bestoption",  "title": "Best Options",            "file": "best_option.csv"},
     {"id": "coveredcall", "title": "Covered Call Income",     "file": "covered_call_income.csv"},
     {"id": "bestput",     "title": "Best Put Option",         "file": "best_put.csv"},
+    {"id": "finalcandidates",     "title": "Final Candidates",         "file": "final_candidates.csv"},
     {"id": "putincome",   "title": "Cash Secured Put Income", "file": "put_income.csv"},
     {"id": "ivspike",     "title": "IV Spike Log",            "file": "iv_spike_log.csv"},
 ]
