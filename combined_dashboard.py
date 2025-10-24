@@ -19,9 +19,9 @@ SOURCES = [
     {"id": "bestoption",  "title": "Best Options",            "file": "best_option.csv"},
     {"id": "coveredcall", "title": "Covered Call Income",     "file": "covered_call_income.csv"},
     {"id": "bestput",     "title": "Best Put Option",         "file": "best_put.csv"},
-    {"id": "finalcandidates",     "title": "Final Candidates",         "file": "final_candidates.csv"},
     {"id": "putincome",   "title": "Cash Secured Put Income", "file": "put_income.csv"},
     {"id": "ivspike",     "title": "IV Spike Log",            "file": "iv_spike_log.csv"},
+    {"id": "finalcandidates",     "title": "Final Candidates",            "file": "final_candidates.csv"},
 ]
 
 def _parse_raw_base(raw_base: str):
@@ -203,3 +203,169 @@ def index():
 if __name__ == "__main__":
     # Local testing; on Render, gunicorn will import app:app and ignore this.
     app.run(host="0.0.0.0", port=5055)
+
+# Streamlit dashboard (converted from Flask)
+# You can deploy this file directly on Streamlit Cloud.
+# If your host expects a specific filename (e.g., streamlit_app.py), simply rename this file.
+
+import os
+import io
+import pandas as pd
+import requests
+import email.utils
+from datetime import datetime
+from zoneinfo import ZoneInfo
+import streamlit as st
+
+# ---------------- Configuration ----------------
+st.set_page_config(page_title="Zen Monkey Capital — CSV Dashboard", layout="wide")
+
+RAW_BASE_DEFAULT = "https://raw.githubusercontent.com/mingchen112001-crypto/csv-dashboard/main/data"
+RAW_BASE = os.getenv("RAW_BASE", RAW_BASE_DEFAULT)
+
+SOURCES = [
+    {"id": "bestoption",       "title": "Best Options",                "file": "best_option.csv"},
+    {"id": "coveredcall",      "title": "Covered Call Income",         "file": "covered_call_income.csv"},
+    {"id": "bestput",          "title": "Best Put Option",             "file": "best_put.csv"},
+    {"id": "putincome",        "title": "Cash Secured Put Income",     "file": "put_income.csv"},
+    {"id": "ivspike",          "title": "IV Spike Log",                "file": "iv_spike_log.csv"},
+    {"id": "finalcandidates",  "title": "Final Candidates",            "file": "final_candidates.csv"},
+]
+
+# --------------- Helpers ----------------
+def _parse_raw_base(raw_base: str):
+    """
+    Parse RAW_BASE like:
+      https://raw.githubusercontent.com/<owner>/<repo>/<branch>/<base_path...>
+    Returns (owner, repo, branch, base_path) or (None, None, None, "") if not parseable.
+    """
+    try:
+        from urllib.parse import urlparse
+        p = urlparse(raw_base)
+        parts = p.path.strip("/").split("/")
+        if len(parts) < 4:
+            return None, None, None, ""
+        owner, repo, branch = parts[0], parts[1], parts[2]
+        base_path = "/".join(parts[3:])
+        return owner, repo, branch, base_path
+    except Exception:
+        return None, None, None, ""
+
+@st.cache_data(ttl=300)
+def fetch_last_modified_et_from_raw(url: str) -> str:
+    """HEAD the raw file; convert Last-Modified/Date to ET. Cached for 5 minutes."""
+    try:
+        r = requests.head(url, timeout=10)
+        stamp = r.headers.get("Last-Modified") or r.headers.get("Date")
+        if not stamp:
+            return "unknown"
+        dt_utc = email.utils.parsedate_to_datetime(stamp)
+        dt_et = dt_utc.astimezone(ZoneInfo("America/New_York"))
+        return dt_et.strftime("%Y-%m-%d %H:%M ET")
+    except Exception:
+        return "unknown"
+
+@st.cache_data(ttl=300)
+def fetch_last_commit_time_et(owner: str, repo: str, branch: str, base_path: str, filename: str) -> str | None:
+    """
+    Use GitHub API to get the latest commit that touched base_path/filename.
+    Returns ET string or None on failure/rate-limit.
+    """
+    try:
+        path = f"{base_path}/{filename}".lstrip("/")
+        url = f"https://api.github.com/repos/{owner}/{repo}/commits"
+        params = {"path": path, "sha": branch, "per_page": 1}
+        headers = {"Accept": "application/vnd.github+json"}
+        token = os.getenv("GH_TOKEN") or os.getenv("GITHUB_TOKEN")
+        if token:
+            headers["Authorization"] = f"Bearer {token}"
+        r = requests.get(url, params=params, headers=headers, timeout=10)
+        if r.status_code != 200:
+            return None
+        data = r.json()
+        if not data:
+            return None
+        commit = data[0].get("commit", {})
+        iso = commit.get("committer", {}).get("date") or commit.get("author", {}).get("date")
+        if not iso:
+            return None
+        dt_utc = datetime.fromisoformat(iso.replace("Z", "+00:00"))
+        dt_et = dt_utc.astimezone(ZoneInfo("America/New_York"))
+        return dt_et.strftime("%Y-%m-%d %H:%M ET")
+    except Exception:
+        return None
+
+@st.cache_data(ttl=120)
+def load_csv(url: str) -> pd.DataFrame:
+    """Load CSV from a raw GitHub URL to DataFrame. Cached for 2 minutes."""
+    try:
+        # pandas can read directly from raw URLs
+        return pd.read_csv(url)
+    except Exception as e:
+        # Try fallback: fetch then read_csv on bytes
+        try:
+            r = requests.get(url, timeout=15)
+            r.raise_for_status()
+            return pd.read_csv(io.BytesIO(r.content))
+        except Exception:
+            # Return empty DF with error message in Streamlit layer
+            raise RuntimeError(str(e))
+
+# ---------------- Sidebar Controls ----------------
+with st.sidebar:
+    st.markdown("### Data Source")
+    raw_base_in = st.text_input(
+        "RAW_BASE (raw GitHub base URL)",
+        value=RAW_BASE,
+        help="raw.githubusercontent URL that points to the base folder containing your CSV files."
+    )
+    st.caption("Example: https://raw.githubusercontent.com/<owner>/<repo>/<branch>/<path-to-data>")
+
+RAW_BASE = raw_base_in or RAW_BASE_DEFAULT
+owner, repo, branch, base_path = _parse_raw_base(RAW_BASE)
+now_et = datetime.now(ZoneInfo("America/New_York")).strftime("%Y-%m-%d %H:%M ET")
+
+# ---------------- Main Layout ----------------
+st.title("Zen Monkey Capital — CSV Dashboard")
+st.write(f"**Fetched (ET):** {now_et}")
+
+tab_titles = [s["title"] for s in SOURCES]
+tabs = st.tabs(tab_titles)
+
+for src, tab in zip(SOURCES, tabs):
+    with tab:
+        url = RAW_BASE.rstrip("/") + "/" + src["file"]
+
+        # Last updated metadata
+        last_mod_et = None
+        if owner and repo and branch is not None:
+            last_mod_et = fetch_last_commit_time_et(owner, repo, branch, base_path, src["file"])
+        if not last_mod_et:
+            last_mod_et = fetch_last_modified_et_from_raw(url)
+
+        st.markdown(
+            f"**Source:** [{src['file']}]({url})  |  **Last updated (GitHub, ET):** {last_mod_et}  |  **Fetched (ET):** {now_et}"
+        )
+
+        # Load & render table
+        try:
+            df = load_csv(url)
+            if df.empty:
+                st.info("No rows to display.")
+            else:
+                # Improve default rendering
+                st.dataframe(df, use_container_width=True, hide_index=True)
+                # Optional CSV download
+                csv_bytes = df.to_csv(index=False).encode("utf-8")
+                st.download_button(
+                    label="Download CSV",
+                    data=csv_bytes,
+                    file_name=src["file"],
+                    mime="text/csv",
+                    help="Save a copy of this table locally."
+                )
+        except Exception as e:
+            st.error(f"Error loading `{src['file']}` from {url}: {e}")
+
+# Footer
+st.caption("© Zen Monkey Capital — Streamlit dashboard. Data pulled from raw GitHub URLs.")
