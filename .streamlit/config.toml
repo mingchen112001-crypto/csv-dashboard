@@ -1,0 +1,7 @@
+[theme]
+base = "dark"
+primaryColor = "#C9A227"          # soft gold
+backgroundColor = "#0B0B0B"       # near-black
+secondaryBackgroundColor = "#141414"
+textColor = "#F6EFD7"             # warm light
+font = "sans serif"
