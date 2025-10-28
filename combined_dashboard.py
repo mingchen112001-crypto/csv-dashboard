@@ -15,13 +15,14 @@ RAW_BASE_DEFAULT = "https://raw.githubusercontent.com/mingchen112001-crypto/csv-
 RAW_BASE = os.getenv("RAW_BASE", RAW_BASE_DEFAULT)
 
 SOURCES = [
-    {"id": "finalcandidates",  "title": "Final Candidates",            "file": "final_candidates.csv"},  # <— requested
-    {"id": "bestput",          "title": "Best Put Option",             "file": "best_put.csv"},
-    {"id": "putincome",        "title": "Cash Secured Put Income",     "file": "put_income.csv"},
-    {"id": "bestoption",       "title": "Best Options",                "file": "best_option.csv"},
-    {"id": "coveredcall",      "title": "Covered Call Income",         "file": "covered_call_income.csv"},
-    {"id": "ivspike",          "title": "IV Spike Log",                "file": "iv_spike_log.csv"},
-]
+    {"id": "bestcalloption",  "title": "Best Call Options",            "file": "best_option.csv"},
+    #{"id": "coveredcall", "title": "Covered Call Income",     "file": "covered_call_income.csv"},
+    #{"id": "bestput",     "title": "Best Put Option",         "file": "best_put.csv"},
+    #{"id": "putincome",   "title": "Cash Secured Put Income", "file": "put_income.csv"},
+    #{"id": "ivspike",     "title": "IV Spike Log",            "file": "iv_spike_log.csv"},
+    {"id": "finalcandidates",     "title": "Final Candidates",            "file": "final_candidates.csv"},
+    {"id": "opencsp",     "title": "Open CSPs",            "file": "open_csp.csv"},
+    {"id": "dtecluster",     "title": "DTE Cluster",            "file": "DTE_cluster.csv"},
 
 # ---------------- Helpers ----------------
 def _parse_raw_base(raw_base: str):
