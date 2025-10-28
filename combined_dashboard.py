@@ -23,7 +23,7 @@ SOURCES = [
     {"id": "finalcandidates",     "title": "Final Candidates",            "file": "final_candidates.csv"},
     {"id": "opencsp",     "title": "Open CSPs",            "file": "open_csp.csv"},
     {"id": "dtecluster",     "title": "DTE Cluster",            "file": "DTE_cluster.csv"},
-
+[
 # ---------------- Helpers ----------------
 def _parse_raw_base(raw_base: str):
     """Parse raw.githubusercontent base into (owner, repo, branch, base_path) or (None, None, None, "")."""
