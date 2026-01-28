@@ -7,6 +7,17 @@ import email.utils
 from datetime import datetime
 from zoneinfo import ZoneInfo  # Python 3.9+
 
+# -------------------------------------------------------------------
+# SAFETY GUARD: Never start Flask inside Streamlit Cloud / Streamlit run
+# Streamlit sets environment variables like STREAMLIT_SERVER_PORT.
+# If we accidentally start Flask, it will block or conflict on port 5055.
+# -------------------------------------------------------------------
+IS_STREAMLIT_RUNTIME = bool(
+    os.getenv("STREAMLIT_SERVER_PORT")
+    or os.getenv("STREAMLIT_SERVER_HEADLESS")
+    or os.getenv("STREAMLIT_RUNTIME")
+)
+
 app = Flask(__name__)
 
 # ---- Configuration ----
@@ -198,8 +209,15 @@ def index():
     return render_template_string(HTML, tables=tables)
 
 if __name__ == "__main__":
-    # Local testing; on Render, gunicorn will import app:app and ignore this.
-    app.run(host="0.0.0.0", port=5055)
+    # IMPORTANT:
+    # This file contains BOTH a Flask app and a Streamlit app.
+    # Streamlit Cloud / `streamlit run` executes this file, so we must NEVER
+    # start Flask in that runtime (it will block and/or conflict on port 5055).
+    #
+    # To run the Flask dev server locally, explicitly set RUN_FLASK=1 AND ensure
+    # you are NOT in a Streamlit runtime.
+    if (not IS_STREAMLIT_RUNTIME) and (os.getenv("RUN_FLASK") == "1"):
+        app.run(host="0.0.0.0", port=5055)
 
 # Streamlit dashboard (converted from Flask)
 # You can deploy this file directly on Streamlit Cloud.
@@ -216,6 +234,7 @@ import streamlit as st
 
 # ---------------- Configuration ----------------
 st.set_page_config(page_title="Zen Monkey Capital — CSV Dashboard", layout="wide")
+st.write("🚀 Streamlit app starting…")
 
 RAW_BASE_DEFAULT = "https://raw.githubusercontent.com/mingchen112001-crypto/csv-dashboard/main/data"
 RAW_BASE = os.getenv("RAW_BASE", RAW_BASE_DEFAULT)
