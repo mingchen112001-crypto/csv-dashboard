@@ -30,6 +30,7 @@ SOURCES = [
     {"id": "finalcandidates",     "title": "Final Candidates",            "file": "final_candidates.csv"},
     {"id": "etffinalcandidates",     "title": "ETF Final Candidates",            "file": "etf_final_candidates.csv"},
     {"id": "toptrimcandidates",     "title": "Top Trim Candidates",            "file": "web_top_trim.csv"},
+    {"id": "rollrecommendation",     "title": "Roll Recommendations",            "file": "roll_recommendations.csv"},
     ]
 
 def _parse_raw_base(raw_base: str):
@@ -243,6 +244,7 @@ SOURCES = [
     {"id": "finalcandidates",     "title": "Final Candidates",            "file": "final_candidates.csv"},
     {"id": "etffinalcandidates",     "title": "ETF Final Candidates",            "file": "etf_final_candidates.csv"},
     {"id": "toptrimcandidates",     "title": "Top Trim Candidates",            "file": "web_top_trim.csv"},
+    {"id": "rollrecommendation",     "title": "Roll Recommendations",            "file": "roll_recommendations.csv"},
     ]
 
 # --------------- Helpers ----------------
