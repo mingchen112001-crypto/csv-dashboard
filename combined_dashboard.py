@@ -247,6 +247,8 @@ SOURCES = [
     {"id": "etffinalcandidates",     "title": "ETF Final Candidates",            "file": "etf_final_candidates.csv"},
     {"id": "toptrimcandidates",     "title": "Top Trim Candidates",            "file": "web_top_trim.csv"},
     {"id": "rollrecommendation",     "title": "Roll Recommendations",            "file": "roll_recommendations.csv"},
+    {"id": "portfoliosummary",     "title": "Portfolio Summary",            "file": "web_portfolio_summary.csv"},
+    {"id": "earlyprofit",     "title": "Early Profit",            "file": "web_early_profit.csv"},
     ]
 
 # --------------- Helpers ----------------
