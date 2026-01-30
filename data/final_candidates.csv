@@ -1,4 +1,4 @@
 symbol,live-expiry,live-strike,spot,OTM %,nearest_support_level,Is_near_support,adj_yield_30d,premium_pct,premium,edge_score,liquidity_tier,edge_bias,theta_vega_warn,theta_eff,valuation_flag,live-iv,live-delta,live-theta,swan_tier,suggested_allocation,num_of_contracts,dyn_delta_min,dyn_delta_max,not_assigned_prob,daily_drop_prob,theta_pct_per_day,theta_gate_required,live_vega,theta_vega_ratio,liquidity_penalty,beta_market,beta_r2,tech_health,ti_flags,ti_bear_ts,ti_bull_ts,ti_confidence,ts_score,ts_base_score,ts_factor,ts_rank_score
-IWM,2026-02-27,246.0,259.06,5.04,,no,,0.87,2.0,,LIQUID,,,16.57,,0.24,0.19,0.08,,,0,0.19,0.27,,,0.03,0.02,0.2,0.4,0.0,,,Neutral,,0.0,0.0,,0,0.87,1.0,0.87
-SPY,2026-03-20,654.0,691.38,5.41,,no,,0.53,5.69,,LIQUID,,THETA_VEGA_LOW,10.1,,0.2,0.19,0.13,,,0,0.19,0.27,,,0.02,0.01,0.7,0.18,0.0,,,Neutral,,0.0,0.0,,0,0.53,1.0,0.53
-XLE,2026-02-27,48.0,50.59,5.12,,no,,0.97,0.43,,CONDITIONAL,,,17.44,,0.26,0.21,0.02,,,0,0.19,0.27,,,0.04,0.02,0.04,0.43,10.0,,,Neutral,,0.0,0.0,,0,0.97,1.0,0.97
+IWM,2026-02-27,245.0,259.05,5.42,,no,,0.82,1.88,,LIQUID,,,17.49,,0.25,0.19,0.08,,,0,0.19,0.27,,,0.03,0.02,0.19,0.42,0.0,,,Neutral,,0.0,0.0,,0,0.82,1.0,0.82
+SPY,2026-03-13,655.0,690.47,5.14,,no,,0.54,5.0,,LIQUID,,THETA_VEGA_LOW,11.04,,0.2,0.19,0.14,,,0,0.19,0.27,,,0.02,0.01,0.64,0.22,0.0,,,Neutral,,0.0,0.0,,0,0.54,1.0,0.54
+XLE,2026-02-27,48.0,50.55,5.05,,no,,0.98,0.44,,CONDITIONAL,,,17.39,,0.26,0.21,0.02,,,0,0.19,0.27,,,0.04,0.02,0.04,0.43,10.0,,,Neutral,,0.0,0.0,,0,0.98,1.0,0.98
