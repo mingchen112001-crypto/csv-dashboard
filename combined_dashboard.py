@@ -33,6 +33,7 @@ SOURCES = [
     {"id": "rollrecommendation",     "title": "Roll Recommendations",            "file": "roll_recommendations.csv"},
     {"id": "portfoliosummary",     "title": "Portfolio Summary",            "file": "web_portfolio_summary.csv"},
     {"id": "earlyprofit",     "title": "Early Profit",            "file": "web_early_profit.csv"},
+    {"id": "opencsp",     "title": "Open CSPs",            "file": "open_csp.csv"},
     ]
 
 def _parse_raw_base(raw_base: str):
@@ -249,6 +250,7 @@ SOURCES = [
     {"id": "rollrecommendation",     "title": "Roll Recommendations",            "file": "roll_recommendations.csv"},
     {"id": "portfoliosummary",     "title": "Portfolio Summary",            "file": "web_portfolio_summary.csv"},
     {"id": "earlyprofit",     "title": "Early Profit",            "file": "web_early_profit.csv"},
+    {"id": "opencsp",     "title": "Open CSPs",            "file": "open_csp.csv"},
     ]
 
 # --------------- Helpers ----------------
