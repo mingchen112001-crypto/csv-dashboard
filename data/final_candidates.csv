@@ -1,7 +1,7 @@
 symbol,live-expiry,live-strike,spot,OTM %,nearest_support_level,Is_near_support,adj_yield_30d,premium_pct,premium,edge_score,liquidity_tier,edge_bias,theta_vega_warn,theta_eff,macro_flags,valuation_flag,live-iv,live-delta,live-theta,swan_tier,suggested_allocation,num_of_contracts,dyn_delta_min,dyn_delta_max,not_assigned_prob,daily_drop_prob,theta_pct_per_day,theta_gate_required,live_vega,theta_vega_ratio,liquidity_penalty,beta_market,beta_r2,tech_health,ti_flags,ti_bear_ts,ti_bull_ts,ti_confidence,ts_score,ts_base_score,ts_factor,ts_rank_score
-SMH,2026-02-20,350.0,378.46,7.52,,no,2.52,2.53,4.42,1.0,LIQUID,Neutral,,50.03,,,0.49,0.19,0.34,,,0,0.19,0.27,,,0.1,0.03,0.21,1.61,0.0,,,Neutral,,0.0,0.0,,0,2.53,1.0,2.53
-QQQ,2026-02-18,565.0,595.7,5.15,,no,2.09,1.75,4.28,1.2,LIQUID,Favorable,,36.73,,,0.35,0.19,0.4,,,0,0.19,0.27,,,0.07,0.03,0.31,1.29,0.0,,,Neutral,,0.0,0.0,,0,1.75,1.0,1.75
-IWM,2026-02-27,242.5,257.63,5.87,,no,1.41,1.19,2.12,1.18,LIQUID,Favorable,,24.84,,,0.31,0.19,0.12,,,0,0.19,0.27,,,0.05,0.03,0.17,0.67,0.0,,,Neutral,,0.0,0.0,,0,1.19,1.0,1.19
-SPY,2026-03-06,640.0,676.33,5.37,,no,1.12,0.85,5.23,1.32,LIQUID,Favorable,,17.16,,,0.25,0.19,0.21,,,0,0.19,0.27,,,0.03,0.02,0.52,0.4,0.0,,,Neutral,,0.0,0.0,,0,0.85,1.0,0.85
-XLF,2026-03-20,50.0,53.31,6.21,,no,0.79,0.68,0.49,1.15,LIQUID,Favorable,THETA_VEGA_LOW,13.39,,,0.24,0.19,0.01,,,0,0.19,0.27,,,0.03,0.01,0.05,0.26,0.0,,,Neutral,,0.0,0.0,,0,0.68,1.0,0.68
-XLE,2026-03-20,49.0,51.72,5.25,,no,1.07,0.98,0.69,1.09,LIQUID,Favorable,THETA_VEGA_LOW,12.95,,,0.26,0.24,0.02,,,0,0.19,0.27,,,0.03,0.01,0.06,0.28,0.0,,,Neutral,,0.0,0.0,,0,0.98,1.0,0.98
+SMH,2026-02-13,355.0,379.41,6.43,,no,3.76,3.78,3.58,1.0,LIQUID,Neutral,,77.0,,,0.56,0.2,0.54,,,0,0.19,0.27,,,0.15,0.03,0.16,3.46,0.0,,,Neutral,,0.0,0.0,,0,3.78,1.0,3.78
+QQQ,2026-02-20,565.0,597.1,5.38,,no,1.97,1.65,4.65,1.2,LIQUID,Favorable,,32.99,,,0.34,0.19,0.36,,,0,0.19,0.27,,,0.06,0.03,0.33,1.09,0.0,,,Neutral,,0.0,0.0,,0,1.65,1.0,1.65
+IWM,2026-02-27,244.0,258.12,5.47,,no,1.46,1.24,2.21,1.18,LIQUID,Favorable,,23.43,,,0.3,0.2,0.12,,,0,0.19,0.27,,,0.05,0.03,0.18,0.65,0.0,,,Neutral,,0.0,0.0,,0,1.24,1.0,1.24
+SPY,2026-03-13,640.0,677.37,5.52,,no,1.01,0.76,5.86,1.32,LIQUID,Favorable,THETA_VEGA_LOW,14.34,,,0.24,0.2,0.18,,,0,0.19,0.27,,,0.03,0.02,0.6,0.31,0.0,,,Neutral,,0.0,0.0,,0,0.76,1.0,0.76
+XLE,2026-02-27,49.0,51.68,5.19,,no,1.43,1.31,0.47,1.09,CONDITIONAL,Favorable,,22.84,,,0.3,0.21,0.02,,,0,0.19,0.27,,,0.05,0.03,0.04,0.65,10.0,,,Neutral,,0.0,0.0,,0,1.31,1.0,1.31
+XLF,2026-03-06,50.5,53.34,5.32,,no,0.97,0.84,0.41,1.15,CONDITIONAL,Favorable,,16.93,,,0.25,0.2,0.02,,,0,0.19,0.27,,,0.03,0.02,0.04,0.4,10.0,,,Neutral,,0.0,0.0,,0,0.84,1.0,0.84
