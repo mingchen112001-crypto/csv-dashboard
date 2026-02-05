@@ -1,1 +1,7 @@
 symbol,old_option,old_expiry,old_strike,live-expiry,live-strike,NetCredit_adj,ΔVega,roll_credit,delta_dte_days,roll_efficiency,old_delta,new_delta,delta_worsen,decision,decision_reason,old_liquidity_tier,is_etf
+QQQ,QQQ6Mar26P580.00,2026-03-07,580.00,2026-03-20,570.00,28.50,1.241000,28.50,13,2.192308,0.289900,0.252410,-0.037490,ROLL,Meets NetCredit_adj + ΔVega criteria,LIQUID,
+IWM,IWM6Mar26P240.00,2026-03-07,240.00,2026-03-20,239.00,180.00,0.817380,90.00,13,6.923077,0.154700,0.181930,0.027230,ROLL,Meets NetCredit_adj + ΔVega criteria,LIQUID,
+XLF,XLF6Mar26P52.00,2026-03-07,52.00,2026-03-13,30.00,1092.20,0.421040,136.53,6,22.754167,0.283800,0.002770,-0.281030,ROLL,Meets NetCredit_adj + ΔVega criteria,ILLIQUID,
+IWM,IWM27Feb26P247.00,2026-02-28,247.00,2026-03-20,246.00,171.50,0.479810,171.50,20,8.575000,0.222800,0.262970,0.040170,ROLL,Meets NetCredit_adj + ΔVega criteria,LIQUID,
+SPY,SPY6Mar26P657.00,2026-03-07,657.00,2026-03-20,645.00,34.00,1.264660,34.00,13,2.615385,0.242600,0.204640,-0.037960,ROLL,Meets NetCredit_adj + ΔVega criteria,LIQUID,
+XLE,XLE6Mar26P47.00,2026-03-07,47.00,2026-03-20,22.50,1720.25,0.284600,172.03,13,13.232692,0.108600,0.002050,-0.106550,ROLL,Meets NetCredit_adj + ΔVega criteria,ILLIQUID,
