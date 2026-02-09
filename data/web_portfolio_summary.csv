@@ -1,7 +1,10 @@
 section,key,value
-summary,asof_utc,2026-02-09T20:30:20Z
-summary,total_positions,4
-summary,total_notional,229100.00
+summary,asof_utc,2026-02-09T20:44:21Z
+summary,total_positions,7
+summary,total_notional,411100.00
 summary,theta_below_floor_count,0
-top_sectors,Technology,81.84%
-top_sectors,Financials,18.16%
+top_sectors,Technology,45.61%
+top_sectors,Industrials,17.03%
+top_sectors,UNKNOWN,14.59%
+top_sectors,Healthcare,12.65%
+top_sectors,Financials,10.12%
