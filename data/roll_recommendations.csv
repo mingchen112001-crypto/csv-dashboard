@@ -1,2 +1,1 @@
 symbol,old_option,old_expiry,old_strike,live-expiry,live-strike,NetCredit_adj,ΔVega,roll_credit,delta_dte_days,roll_efficiency,old_delta,new_delta,delta_worsen,decision,decision_reason,old_liquidity_tier,is_etf
-XLF,XLF6Mar26P52.00,2026-03-07,52.00,2026-03-27,35.00,1192.20,0.380080,149.03,20,7.451250,0.272800,0.003380,-0.269420,ROLL,Meets NetCredit_adj + ΔVega criteria,LIQUID,
