@@ -1,5 +1,5 @@
 Symbol,Contracts,Strike,option price,Live spot,Expiry,DTE,Monthly Yield,Net Premium in CAD,Assigned Capital,Moneyness,Target Premium,Eeffective Monthly Yield,Break even price,Margin Interests per share,Effective Portfolio Monthly Yield,Portfolio Effective Monthly Premium ,Annual Portfolio Yield,Annual Portfolio Premium,Notional Weighted Portfolio Moneyness,Total Notional in USD,Total BP used
-smh-US,1,360,4.6,411.64,2026-03-27,29.00,1.20%,619.65,36000,12.54%,2.53,1.03%,355.4,3.45,0.89%,"2,135.52",10.72%,"25,626.26",10.94%,177000,53100
-googL-US,2,280,3.05,307.3,2026-03-27,29.00,1.13%,820.80,56000,8.88%,1.68,0.97%,276.95,2.68,,,,,,,
-smh-US,1,355,4.55,411.64,2026-04-02,35.00,1.10%,612.90,35500,13.76%,2.50,0.94%,350.45,3.40,,,,,,,
+smh-US,1,360,4.6,412.01,2026-03-27,29.00,1.20%,619.65,36000,12.62%,2.53,1.03%,355.4,3.45,0.89%,"2,135.52",10.72%,"25,626.26",10.98%,177000,53100
+googL-US,2,280,3.05,307.38,2026-03-27,29.00,1.13%,820.80,56000,8.91%,1.68,0.97%,276.95,2.68,,,,,,,
+smh-US,1,355,4.55,412.01,2026-04-02,35.00,1.10%,612.90,35500,13.84%,2.50,0.94%,350.45,3.40,,,,,,,
 xle-US,10,49.5,0.4,55.05,2026-03-20,22.00,0.78%,527.85,49500,10.08%,0.22,0.67%,49.1,0.47,,,,,,,
