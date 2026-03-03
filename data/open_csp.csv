@@ -1,7 +1,7 @@
 Symbol,Contracts,Strike,option price,Live spot,Expiry,DTE,Monthly Yield,Net Premium in CAD,Assigned Capital,Moneyness,Target Premium,Eeffective Monthly Yield,Break even price,Margin Interests per share,Effective Portfolio Monthly Yield,Portfolio Effective Monthly Premium ,Annual Portfolio Yield,Annual Portfolio Premium,Notional Weighted Portfolio Moneyness,Total Notional in USD,Total BP used
 smh-US,1,335,4.95,391.06,2026-04-02,30.00,1.48%,666.90,33500,14.34%,2.72,1.27%,330.05,3.21,0.87%,"6,062.93",10.41%,"72,755.18",7.70%,517600,155280
 smh-US,1,360,4.6,391.06,2026-03-27,24.00,1.20%,619.65,36000,7.94%,2.53,1.03%,355.4,3.45,,,,,,,
-aapl-US,2,250,2.65,263.78,2026-03-27,24.00,1.14%,712.80,50000,5.22%,1.46,0.98%,247.35,2.40,,,,,,,
+aapl-US,2,250,2.65,263.75,2026-03-27,24.00,1.14%,712.80,50000,5.21%,1.46,0.98%,247.35,2.40,,,,,,,
 googL-US,2,280,3.05,303.58,2026-03-27,24.00,1.13%,820.80,56000,7.77%,1.68,0.97%,276.95,2.68,,,,,,,
 smh-US,1,355,4.55,391.06,2026-04-02,30.00,1.10%,612.90,35500,9.22%,2.50,0.94%,350.45,3.40,,,,,,,
 spy-US,1,637,6.07,680.33,2026-03-31,28.00,1.02%,818.10,63700,6.37%,3.34,0.88%,630.93,6.10,,,,,,,
