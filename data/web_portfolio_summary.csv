@@ -1,8 +1,8 @@
 section,key,value
-summary,asof_utc,2026-03-10T20:30:40Z
+summary,asof_utc,2026-03-11T14:30:37Z
 summary,total_positions,8
-summary,total_notional,380900.00
+summary,total_notional,380100.00
 summary,theta_below_floor_count,0
-top_sectors,Technology,55.66%
-top_sectors,Broad Market,29.64%
-top_sectors,Communication Services,14.70%
+top_sectors,Technology,55.77%
+top_sectors,Broad Market,29.49%
+top_sectors,Communication Services,14.73%
