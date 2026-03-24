@@ -1,1 +1,2 @@
 symbol,old_option,old_expiry,old_strike,live-expiry,live-strike,NetCredit_adj,ΔVega,roll_credit,delta_dte_days,roll_efficiency,old_delta,new_delta,delta_worsen,decision,decision_reason,old_liquidity_tier,is_etf
+QQQ,QQQ17Apr26P561.00,2026-04-18,561.00,2026-05-01,555.00,166.50,1.105680,166.50,13,12.807692,0.265700,0.260630,-0.005070,ROLL,Meets NetCredit_adj + ΔVega criteria,LIQUID,
