@@ -1,4 +1,4 @@
 Symbol,Contracts,Strike,option price,Live spot,Expiry,DTE,Monthly Yield,Net Premium in CAD,Assigned Capital,Moneyness,Target Premium,Eeffective Monthly Yield,Break even price,Margin Interests per share,Effective Portfolio Monthly Yield,Portfolio Effective Monthly Premium ,Annual Portfolio Yield,Annual Portfolio Premium,Notional Weighted Portfolio Moneyness,Total Notional in USD,Total BP used
-smh-US,1,350,9.6,439.02,2026-05-15,32.00,1.65%,1294.65,35000,20.28%,5.28,1.42%,340.4,3.35,1.17%,"1,453.43",14.03%,"17,441.12",19.01%,92100,27630
-iwm-US,1,231,3.58,262.15,2026-05-15,32.00,1.22%,481.95,23100,11.88%,1.97,1.05%,227.42,2.21,,,,,,,
-smh-US,1,340,4.85,439.02,2026-05-08,25.00,1.16%,653.40,34000,22.55%,2.67,0.99%,335.15,3.26,,,,,,,
+smh-US,1,350,9.6,437.5,2026-05-15,32.00,1.65%,1294.65,35000,20.00%,5.28,1.42%,340.4,3.35,1.17%,"1,453.43",14.03%,"17,441.12",18.79%,92100,27630
+iwm-US,1,231,3.58,261.94,2026-05-15,32.00,1.22%,481.95,23100,11.81%,1.97,1.05%,227.42,2.21,,,,,,,
+smh-US,1,340,4.85,437.5,2026-05-08,25.00,1.16%,653.40,34000,22.29%,2.67,0.99%,335.15,3.26,,,,,,,
