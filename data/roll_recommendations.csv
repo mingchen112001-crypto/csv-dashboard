@@ -1,2 +1,2 @@
 symbol,old_option,old_expiry,old_strike,live-expiry,live-strike,NetCredit_adj,ΔVega,roll_credit,delta_dte_days,roll_efficiency,old_delta,new_delta,delta_worsen,decision,decision_reason,old_liquidity_tier,is_etf
-SMH,SMH1May26P350.00,2026-08-20,350.00,2026-08-21,195.00,234.95,0.001730,234.95,1,234.950000,0.000600,0.000230,-0.000370,ROLL,Meets NetCredit_adj + ΔVega criteria,ILLIQUID,
+SMH,SMH1May26P350.00,2026-08-20,350.00,2026-08-21,210.00,221.07,0.001870,221.07,1,221.075000,0.000600,0.000260,-0.000340,ROLL,Meets NetCredit_adj + ΔVega criteria,ILLIQUID,
